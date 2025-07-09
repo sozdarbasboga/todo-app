@@ -129,6 +129,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+}
+
+.todoapp:after, .todoapp:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.08);
+  z-index: -1;
+}
+
+.todoapp:before {
+  bottom: -16px;
+  left: 8px;
+  right: 8px;
+  height: 8px;
+  background: rgba(0,0,0,0.06);
+}
+
+.todoapp:after {
+  bottom: -8px;
+  left: 4px;
+  right: 4px;
+  height: 8px;
+  background: rgba(0,0,0,0.10);
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -352,13 +381,10 @@ body {
 .footer {
   color: #777;
   padding: 10px 15px;
-  height: 20px;
+  height: auto;
   text-align: center;
   border-top: 1px solid #e6e6e6;
   width: 100%;
-  background: none;
-  margin-top: 10px;
-  position: relative;
 }
 
 .footer:before {
@@ -379,6 +405,7 @@ body {
 .todo-count {
 	float: left;
 	text-align: left;
+	margin-left: 24px;
 }
 
 .todo-count strong {
@@ -422,6 +449,7 @@ html .clear-completed:active {
 	line-height: 20px;
 	text-decoration: none;
 	cursor: pointer;
+	margin-right: 24px;
 }
 
 .clear-completed:hover {
@@ -448,6 +476,14 @@ html .clear-completed:active {
 
 .info a:hover {
 	text-decoration: underline;
+}
+
+footer.info {
+  margin-top: 48px;
+  color: #bfbfbf;
+  font-size: 0.8rem;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  text-align: center;
 }
 
 /*
