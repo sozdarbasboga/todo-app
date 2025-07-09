@@ -1,12 +1,52 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Canlı Demo
 
-Currently, two official plugins are available:
+[🔗 Uygulamayı Canlı Görüntüle](https://sozdar-todoapp.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bu proje, **Vite + React** kullanılarak geliştirilmiş, modern ve responsive bir Todo uygulamasıdır. Tasarımı ve işlevselliği, TodoMVC örneğine sadık kalınarak hazırlanmıştır.
 
-## Expanding the ESLint configuration
+## Özellikler
+- Görev ekleme, silme, tamamlama
+- Tümünü tamamlama veya geri alma
+- Aktif, tamamlanan ve tüm görevler için filtreleme
+- Tamamlananları topluca silme
+- Kalan görev sayısını gösterme
+- Veriler **localStorage**'da saklanır (sayfa yenilense de kaybolmaz)
+- Modern ve mobil uyumlu (responsive) tasarım
+- Orijinal TodoMVC'ye benzer stacked shadow ve info footer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Kurulum
+
+1. **Projeyi klonlayın:**
+   ```bash
+   git clone <repo-link>
+   cd todo-app
+   ```
+2. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   ```
+3. **Projeyi başlatın:**
+   ```bash
+   npm run dev
+   ```
+4. Tarayıcınızda `http://localhost:5173` adresini açın.
+
+## Ekran Görüntüsü
+
+![Todo App Ekran Görüntüsü](docs/screenshot.png)
+
+> Not: Görseli kendi bilgisayarınızda `docs/screenshot.png` olarak ekleyebilirsiniz.
+
+## Kullanılan Teknolojiler
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- CSS (özelleştirilmiş TodoMVC stili)
+
+## Katkı
+Pull request ve issue gönderebilirsiniz. Her türlü katkıya açığız!
+
+---
+
+Hazırlayan: **Sözdar Başboğa**
